@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+<body>
+
+   <!-- nav -->
+
+   <header class="nav">
+    <nav class="banner">
+        <a href="index.html"><img class="home" src="../icons/home.png" alt="accueil"></a>
+    </nav>
+</header>
+
+<!-- form -->
+
+<main>
+    <article class="contactTitle">
+        <h2>CONTACT</h2>
+    </article>
+</main>
+
+<section>
+    <form action="form.php" method="post">
+
+    <fieldset>
+        <label for="lastName">Nom</label>
+        <input type="text" name="lastName" id="lastName" required placeholder="Votre nom">
+
+        <label for="firstName">Prénom</label>
+        <input type="text" name="firstName" id="firstName" required placeholder="Votre prénom">
+
+        <label for="email">Mail</label>
+        <input type="email" name="email" id="email" placeholder="Votre Mail" required>
+
+        <label for="phoneNumber">Numéro de téléphone</label>
+        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Votre numéro de téléphone" required>
+
+        <label for="address">Adresse</label>
+        <textarea name="address" id="address" cols="10" rows="10" required placeholder="Votre adresse"></textarea>
+
+        <label for="zipCode">Code postal</label>
+        <input type="number" name="zipCode" id="zipCode" placeholder="Votre code postal" required>
+
+        <label for="city">Ville</label>
+        <input type="text" name="city" id="city" placeholder="Votre ville" required>
+    </fieldset>
+
+    <fieldset>
+        <label for="text">Commentaire</label>
+        <textarea name="text" id="text" cols="50" rows="10" placeholder="Vous pouvez ajouter un commentaire">
+        </textarea>
+    </fieldset>
+
+    <fieldset>
+        <label for="ref">Référence</label>
+       <input type="text" name="ref" id="ref" value="" placeholder="ref: 0000P1">
+        <button id="delete">Supprimer</button>
+    </fieldset>
+
+    <fieldset class="frameDimension">
+        <p class="titleFrameDimension">Choix de cadre</p>
+        <input type="radio" name="cadre" value="dimension1">
+        <label for="dimension1">dimension 1</label>
+        <input type="radio" name="cadre" value="dimension2">
+        <label for="dimension2">dimension 2</label>
+        <input type="radio" name="cadre" value="dimension3">
+        <label for="dimension3">dimension 3</label>
+        <input type="radio" name="cadre" value="dimension4">
+        <label for="dimension4">dimension 4</label>
+    </fieldset>
+
+    <fieldset>
+        <div class="btnForm">
+            <input type="submit" value="Validé">
+        </div>
+    </fieldset>
+</form></section>
+
+<!-- footer -->
+
+<footer class="contentFooter">
+    <div class="logoFooter">
+        <div class="footerNav">
+            <a href="#"><img src="icons/facebook.png"></a>
+            <a href="#"><img src="icons/instagram.png"></a>
+            <a href="#"><img src="icons/500px.png"></a>
+        </div>
+    </div>
+
+    <div class="footerCopy">
+        <p>©- 2021 - images &amp; vidéos de Loz'd'antan Photographie par Olivier</p>
+    </div>
+</footer>
+    
+</body>
+</html>
